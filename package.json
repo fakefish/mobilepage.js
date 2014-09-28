@@ -1,5 +1,5 @@
 {
-  "name": "mobilepage.js",
+  "name": "mobilepage",
   "version": "0.0.0",
   "description": "a library for mobile page dependence on jquery",
   "main": "Gruntfile.js",
