@@ -1,0 +1,22 @@
+{
+  "name": "mobilepage.js",
+  "version": "0.0.0",
+  "description": "a library for mobile page dependence on jquery",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fakefish/mobilepage.js.git"
+  },
+  "author": "fakefish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fakefish/mobilepage.js/issues"
+  },
+  "homepage": "https://github.com/fakefish/mobilepage.js",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

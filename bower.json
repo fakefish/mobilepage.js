@@ -1,0 +1,25 @@
+{
+  "name": "mobilepage.js",
+  "main": "mobilepage.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fakefish/mobilepage.js",
+  "authors": [
+    "fakefish"
+  ],
+  "keywords": [
+    "mobile",
+    "page"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15"
+  }
+}
