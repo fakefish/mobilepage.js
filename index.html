@@ -4,7 +4,157 @@
 	<meta charset="UTF-8">
 	<title>Mobile Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="src/style.css">
+	<!-- <link rel="stylesheet" href="src/style.css"> -->
+	<style>
+/* loading animation */
+.bubblingG {
+  text-align: center;
+  height:40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.bubblingG span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 20px auto;
+  background: #FFFFFF;
+  -moz-border-radius: 40px;
+  -moz-animation: bubblingG 1.1s infinite alternate;
+  -webkit-border-radius: 40px;
+  -webkit-animation: bubblingG 1.1s infinite alternate;
+  -ms-border-radius: 40px;
+  -ms-animation: bubblingG 1.1s infinite alternate;
+  -o-border-radius: 40px;
+  -o-animation: bubblingG 1.1s infinite alternate;
+  border-radius: 40px;
+  animation: bubblingG 1.1s infinite alternate;
+}
+
+#bubblingG_1 {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+#bubblingG_2 {
+  -moz-animation-delay: 0.33s;
+  -webkit-animation-delay: 0.33s;
+  -ms-animation-delay: 0.33s;
+  -o-animation-delay: 0.33s;
+  animation-delay: 0.33s;
+}
+
+#bubblingG_3 {
+  -moz-animation-delay: 0.66s;
+  -webkit-animation-delay: 0.66s;
+  -ms-animation-delay: 0.66s;
+  -o-animation-delay: 0.66s;
+  animation-delay: 0.66s;
+}
+
+@-moz-keyframes bubblingG {
+0% {
+  width: 8px;
+  height: 8px;
+  background-color:#FFFFFF;
+  -moz-transform: translateY(0);
+}
+
+100% {
+  width: 19px;
+  height: 19px;
+  background-color:#000000;
+  -moz-transform: translateY(-17px);
+}
+
+}
+
+@-webkit-keyframes bubblingG {
+0% {
+  width: 8px;
+  height: 8px;
+  background-color:#FFFFFF;
+  -webkit-transform: translateY(0);
+}
+
+100% {
+  width: 19px;
+  height: 19px;
+  background-color:#000000;
+  -webkit-transform: translateY(-17px);
+}
+
+}
+
+@-ms-keyframes bubblingG {
+0% {
+  width: 8px;
+  height: 8px;
+  background-color:#FFFFFF;
+  -ms-transform: translateY(0);
+}
+
+100% {
+  width: 19px;
+  height: 19px;
+  background-color:#000000;
+  -ms-transform: translateY(-17px);
+}
+
+}
+
+@-o-keyframes bubblingG {
+0% {
+  width: 8px;
+  height: 8px;
+  background-color:#FFFFFF;
+  -o-transform: translateY(0);
+}
+
+100% {
+  width: 19px;
+  height: 19px;
+  background-color:#000000;
+  -o-transform: translateY(-17px);
+}
+
+}
+
+@keyframes bubblingG {
+0% {
+  width: 8px;
+  height: 8px;
+  background-color:#FFFFFF;
+  transform: translateY(0);
+}
+
+100% {
+  width: 19px;
+  height: 19px;
+  background-color:#000000;
+  transform: translateY(-17px);
+}
+
+}
+
+/* utils */
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+	</style>
 	<script data-main="src/main" src="lib/requirejs/require.js"></script>
 </head>
 <body>
