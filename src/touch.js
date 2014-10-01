@@ -9,7 +9,7 @@ define(['scene'],function(Scene) {
   		Scene.nextShow();
   	}
   }
-  $(document).on('click', function() {
+  $('document').on('touchstart', function() {
   	Touch.move();
   });
 
