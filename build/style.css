@@ -1,10 +1,17 @@
 /* utils */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
 .cover {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1000; }
 
 .spinner {
   width: 60px;
@@ -35,5 +42,30 @@
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+.container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+.steps {
+  height: 100%; }
+
+.step {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; }
+
+.step1 {
+  background-image: url(../resource/img/1.jpg); }
+
+.step2 {
+  background-image: url(../resource/img/2.jpg); }
+
+.step3 {
+  background-image: url(../resource/img/3.jpg); }
+
+.step4 {
+  background-image: url(../resource/img/4.jpg); }
 
 /*# sourceMappingURL=style.css.map */

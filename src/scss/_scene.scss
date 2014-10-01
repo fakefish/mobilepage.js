@@ -1,0 +1,26 @@
+.container {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;	
+}
+.steps {
+	height: 100%;
+}
+.step {
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+.step1 {
+	background-image: url(../resource/img/1.jpg);
+}
+.step2 {
+	background-image: url(../resource/img/2.jpg);
+}
+.step3 {
+	background-image: url(../resource/img/3.jpg);
+}
+.step4 {
+	background-image: url(../resource/img/4.jpg);
+}
