@@ -11,9 +11,9 @@ require(['jquery', 'scene', 'touch', 'audio'], function($, Scene, Touch, Audio) 
 		$('.step').each(function(){
 			Scene.add($(this));
 		});
-		console.log(Scene)
+		// console.log(Scene)
 
-		console.log(Touch)
+		// console.log(Touch)
 		Touch.type();
 
 		// Audio.add('.bgaudio');

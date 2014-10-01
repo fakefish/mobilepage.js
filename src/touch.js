@@ -9,8 +9,9 @@ define(['scene'],function(Scene) {
   		Scene.nextShow();
   	}
   }
-  $('document').on('touchstart', function() {
+  $('.container').on('touchstart', function() {
   	Touch.move();
+  	// console.log('move')
   });
 
   return Touch;
