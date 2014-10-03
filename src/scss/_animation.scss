@@ -12,6 +12,10 @@
   animation: rotateplane 1.5s infinite ease-in-out;
 }
  
+.steps {
+  transition: all 0.3s;
+}
+
 @-webkit-keyframes rotateplane {
   0% { -webkit-transform: perspective(120px) }
   50% { -webkit-transform: perspective(120px) rotateY(180deg) }
