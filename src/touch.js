@@ -24,16 +24,19 @@ define(['jquery'],function($) {
     start: function(fn) {
       this.$container[0].addEventListener('touchstart', function(e) {
         fn(e);
+        return false;
       }, false);
     },
     move: function(fn) {
       this.$container[0].addEventListener('touchmove', function(e) {
-        fn(e)
+        fn(e);
+        return false;
       }, false);
     },
     end: function(fn) {
       this.$container[0].addEventListener('touchend', function(e) {
-        fn(e)
+        fn(e);
+        return false;
       }, false);
     },
   }
