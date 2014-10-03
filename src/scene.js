@@ -2,6 +2,17 @@ define(['jquery','touch'], function($, Touch) {
   console.log('scene.js');
   var WIDTH = $('body').width();
   var HEIGHT = $('body').height();
+
+  var TRANSITION_END = 'webkitTransitionEnd';
+  var TRANSITION_CSS = '-webkit-transition';
+  var TRANSFORM_CSS = '-webkit-transform';
+  var TRANSITION = 'webkitTransition';
+  if(document.body.style.transform) {
+    TRANSITION_END = 'transitionend';
+    TRANSITION_CSS = 'transition';
+    TRANSFORM_CSS = 'transform';
+    TRANSITION = 'transition';
+  }
   
   var _this;
   var childTop;
@@ -73,7 +84,10 @@ define(['jquery','touch'], function($, Touch) {
 
     move: function(goTo) {
       this.$ele.data('top',goTo);
-      this.$ele.css('transform','translateY('+goTo+'px)');
+      // Scene.$ele.css(TRANSFORM_CSS,'translateY('+goTo+'px)');
+      setTimeout(function(){
+        Scene.$ele.css(TRANSFORM_CSS,'translateY('+goTo+'px)');
+      },0)
     }
   }
   return Scene;
