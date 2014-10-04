@@ -46,8 +46,10 @@ define(['jquery','touch'], function($, Touch) {
         start = e.touches[0].clientY;
       });
       Touch.move(function(e) {
-        _this.move(e.touches[0].clientY-beginPos);
-        end = e.touches[0].clientY;
+        touches = e.touches && ( e.touches.length ? e.touches : [e] )
+        e = (e.changedTouches && e.changedTouches[0]) || (e.originalEvent && e.originalEvent.changedTouches && e.originalEvent.changedTouches[0]) || touches[0].originalEvent || touches[0];
+        _this.move(touches[0].clientY-beginPos);
+        end = touches[0].clientY;
       });
       Touch.end(function(e) {
         for(var i = len; i ; i--) {
