@@ -47,7 +47,7 @@ define(['jquery','touch'], function($, Touch) {
       });
       Touch.move(function(e) {
         touches = e.touches && ( e.touches.length ? e.touches : [e] )
-        e = (e.changedTouches && e.changedTouches[0]) || (e.originalEvent && e.originalEvent.changedTouches && e.originalEvent.changedTouches[0]) || touches[0].originalEvent || touches[0];
+        // e = (e.changedTouches && e.changedTouches[0]) || (e.originalEvent && e.originalEvent.changedTouches && e.originalEvent.changedTouches[0]) || touches[0].originalEvent || touches[0];
         _this.move(touches[0].clientY-beginPos);
         end = touches[0].clientY;
       });

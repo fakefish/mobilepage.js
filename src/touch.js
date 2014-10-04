@@ -9,21 +9,19 @@ define(['jquery'],function($) {
     },
 
     start: function(fn) {
-      document.addEventListener('touchstart', function(e) {
+      this.$container[0].addEventListener('touchstart', function(e) {
         fn(e);
-        return false;
       }, false);
     },
     move: function(fn) {
-      document.addEventListener('touchmove', function(e) {
+      this.$container[0].addEventListener('touchmove', function(e) {
         fn(e);
-        return false;
+        e.preventDefault();
       }, false);
     },
     end: function(fn) {
-      document.addEventListener('touchend', function(e) {
+      this.$container[0].addEventListener('touchend', function(e) {
         fn(e);
-        return false;
       }, false);
     },
   }
