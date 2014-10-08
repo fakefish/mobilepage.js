@@ -5,6 +5,10 @@ html, body {
   padding: 0;
   margin: 0; }
 
+* {
+  padding: 0;
+  margin: 0; }
+
 .cover {
   position: absolute;
   top: 0;
@@ -58,7 +62,8 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .step1 {
   background-image: url(../resource/img/1.jpg); }
@@ -71,5 +76,16 @@ html, body {
 
 .step4 {
   background-image: url(../resource/img/4.jpg); }
+
+.step1 .title {
+  position: absolute;
+  margin-top: -16px;
+  top: 49%;
+  left: 50%;
+  margin-left: -108px;
+  opacity: 0; }
+
+.step .desc {
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

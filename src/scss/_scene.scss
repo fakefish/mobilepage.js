@@ -11,6 +11,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100%;
+	position: relative;
 }
 .step1 {
 	background-image: url(../resource/img/1.jpg);
@@ -23,4 +24,16 @@
 }
 .step4 {
 	background-image: url(../resource/img/4.jpg);
+}
+.step1 .title {
+	// display: none;
+	position: absolute;
+	margin-top: -16px;
+	top: 49%;
+	left: 50%;
+	margin-left: -108px;
+	opacity: 0;
+}
+.step .desc {
+	position: absolute;
 }
