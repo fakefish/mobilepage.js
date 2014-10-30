@@ -23,14 +23,19 @@ define(['jquery','touch'], function($, Touch) {
     len: 0,
     lines: [],
     animates: [],
-    init: function(selector, container) {
+    option: {
+      container: '.container',
+      selector: '.steps',
+      type: 1
+    },
+    init: function(option) {
       _this = this;
-      this.$ele = $(selector);
-      this.$ele.height = $(selector).height();
-      this.$ele.width = $(selector).width();
-      this.$container = $(container);
+      this.$ele = $(option.selector);
+      this.$ele.height = $(option.selector).height();
+      this.$ele.width = $(option.selector).width();
+      this.$container = $(option.container);
       this.len = this.$ele.children().length;
-
+      $.extend(this.option, option);
 
       var $ele = this.$ele;
       var $container = this.$container;
@@ -44,7 +49,7 @@ define(['jquery','touch'], function($, Touch) {
       }
 
       this.animates[0]();
-      Touch.init(selector, container);
+      Touch.init(option.selector, option.container);
       Touch.start(function(e) {
         beginPos = e.touches[0].clientY - $ele.data('top');
         start = e.touches[0].clientY;
@@ -61,6 +66,7 @@ define(['jquery','touch'], function($, Touch) {
         //   return ;
         // }
         // console.log(dis < -_this.lines[_this.lines.length-1])
+        console.log(_this.option)
         _this.move(dis);
         end = touches[0].clientY;
       });

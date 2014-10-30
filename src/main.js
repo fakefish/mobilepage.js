@@ -32,6 +32,10 @@ require(['jquery', 'scene', 'touch', 'audio'], function($, Scene, Touch, Audio) 
         console.log(3)
       }
     });
-    Scene.init('.steps', '.container');
+    Scene.init({
+      container: '.container',
+      selector: '.steps',
+      type: 2
+    });
   })
 });
